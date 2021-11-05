@@ -45,10 +45,10 @@ a {
 a:hover {	
     font-weight: bold;	
 }	
-.name{	
+/* .name{	
     font-size: 150%;	
     font-weight: 200;	
-}	
+}	 Why is this here? There is no .name? */ 
 img {	
     height:39rem;	
     object-fit: cover;	
@@ -125,6 +125,7 @@ button:hover{
     justify-content: space-around;
     width:80%;
     margin:0 auto;
+    padding-bottom: 2%;
 }
 
 .artist{
@@ -133,4 +134,25 @@ button:hover{
 }
 .artist img{
     width:100%;
+}
+@media(max-width:500px){
+    nav a {
+        padding: 8%
+    }
+    span {
+        height: 50%;
+        margin-top: 10%;
+    }
+    .artists-container{
+        flex-direction: column;
+        padding-bottom: 10%;
+    }
+    .artist{
+        width: 75%;
+        margin: auto;
+    }
+    .bio {
+        font-size: 1.25rem;
+    }
+
 }
